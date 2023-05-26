@@ -1,4 +1,4 @@
-var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+var topics = ['HTML', 'CSS', 'Git', 'JavaScript', 'Deployment'];
 
 var randomTopic = topics[Math.floor(Math.random() * topics.length)];
 
@@ -10,7 +10,7 @@ function listTopics() {
 }
 
 
-//This function selects the topic to study randomly from among the topics outlines in the function above
+//This function selects the topic to study randomly from among the topics outlined in the function above
 function selectTopic() {
     if (randomTopic === 'HTML') {
         console.log("Let's study HTML!");
@@ -20,11 +20,12 @@ function selectTopic() {
         console.log("Let's study Git!");
     } else if (randomTopic === 'JavaScript') {
         console.log("Let's study JavaScript!");
+    } else if (randomTopic === 'Deployment') {
+        console.log("Let's Study Deployment!");
     } else {
         console.log('Please try again!');
     }
 }
-
 
 //This is where the console.log commands will all go
 console.log('Here are the topics we learned throughout Prework:');
